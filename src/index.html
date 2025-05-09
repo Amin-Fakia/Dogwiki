@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body >
+
+    
+
+     <!-- OVERLAY FOR BLACK BACKGROUND -->
+    <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 z-50">
+    <div class="bg-white p-6 rounded shadow-lg w-[50%]">
+        <h2 class="text-xl font-semibold mb-4 text-blue-800">Random Facts About Dogs</h2>
+        <p class="mb-4 w-full text-gray-700" id="randomFact"></p>
+        <button onclick="closeModal()" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
+            Close
+        </button>
+    </div>
+    </div>
+
+    
+    <header class="sticky top-0 bg-blue-700 w-full px-10 py-4 z-[100]">
+        <div class="flex gap-4 items-center">
+            <div class="w-[100px] cursor-pointer" onclick="location.reload()">
+                <img src="assets/logo.png" alt="" class="w-full h-full">
+            </div>
+            
+        </div>
+        
+
+    </header>
+
+    <main class="bg-slate-50 min-h-screen py-6 px-6 flex flex-col gap-5">
+        <div class="bg-white mx-24 rounded-full shadow-md p-5 flex justify-between">
+            <input type="text" class="w-full h-full outline-none" placeholder="Search for dog breeds...">
+            <svg class="flex" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </div>
+    
+
+        <section class="px-20 flex flex-col gap-4" id="displaySection">
+            <h1 class="text-blue-600 text-2xl font-bold" id="displayText">Select Your Group:</h1>
+            <!-- DOGS / GROUPS -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4" id="displayGrid">
+
+        </section>
+         
+    </main>
+    <!-- random facts -->
+    <div>
+        <div onclick="fetchRandomFact()" class="fixed cursor-pointer right-[30px] bottom-[30px] bg-blue-600 text-white flex justify-center items-center rounded-full w-[120px] h-[120px]">
+            <span >Random Facts</span>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
