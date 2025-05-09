@@ -68,11 +68,11 @@ function displayGroups(data) {
         displayGrid.innerHTML += 
         `   
             
-            <button  class="relative flex p-8 bg-white rounded-xl h-[200px] cursor-pointer"
+            <button  class="relative flex p-8 bg-white rounded-xl h-64 cursor-pointer"
                 onclick='fetchGroup(${JSON.stringify(group.relationships.breeds.data)},"${group.attributes.name}")'>
                         <h1 class="text-blue-800 text-xl font-bold ">${group.attributes.name}</h1>
                         <img src="src/assets/dog_gray_watermark.png" alt="dog watermark" 
-                            class="absolute bottom-0 right-0">
+                            class="absolute bottom-0 right-0  ">
             </button>
             
         `
@@ -131,7 +131,7 @@ function displayDogs(data) {
                 onclick='showDetails(${JSON.stringify(data)})'>
                         <h1 class="text-blue-800 text-xl font-bold ">${data.name}</h1>
                         <img src="src/assets/dog_gray_watermark.png" alt="dog watermark" 
-                            class="absolute bottom-0 right-0">
+                            class="absolute bottom-0 right-0 w-[50px] h-[50px] lg:w-full lg:h-full">
             </button>
             
         `
