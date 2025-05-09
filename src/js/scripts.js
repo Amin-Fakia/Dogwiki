@@ -71,7 +71,7 @@ function displayGroups(data) {
             <button  class="relative flex p-8 bg-white rounded-xl h-[200px] cursor-pointer"
                 onclick='fetchGroup(${JSON.stringify(group.relationships.breeds.data)},"${group.attributes.name}")'>
                         <h1 class="text-blue-800 text-xl font-bold ">${group.attributes.name}</h1>
-                        <img src="assets/dog_gray_watermark.png" alt="dog watermark" 
+                        <img src="src/assets/dog_gray_watermark.png" alt="dog watermark" 
                             class="absolute bottom-0 right-0">
             </button>
             
@@ -130,7 +130,7 @@ function displayDogs(data) {
             <button class="relative flex p-8 bg-white  rounded-xl h-[200px] cursor-pointer" 
                 onclick='showDetails(${JSON.stringify(data)})'>
                         <h1 class="text-blue-800 text-xl font-bold ">${data.name}</h1>
-                        <img src="assets/dog_gray_watermark.png" alt="dog watermark" 
+                        <img src="src/assets/dog_gray_watermark.png" alt="dog watermark" 
                             class="absolute bottom-0 right-0">
             </button>
             
